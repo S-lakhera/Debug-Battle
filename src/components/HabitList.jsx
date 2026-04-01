@@ -47,7 +47,7 @@ const HabitList = () => {
             <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">
               Daily Progress
             </p>
-            <h2 className="text-xl font-bold text-slate-800">Keep going</h2>
+            <h2 className="text-xl font-bold text-slate-800">{completedTodayCount == totalHabits ? "All caught up!": "Keep going"} </h2>
           </div>
           <span className="text-sm font-medium text-slate-500">
             {completedTodayCount} / {totalHabits}
